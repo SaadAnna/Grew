@@ -35,9 +35,11 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      isScrolled ? "bg-[#1d1d22c5] shadow-lg w-[80%]" : "bg-[#1d1d2281]"
-    } text-white w-[90%] mx-auto rounded-full mt-4`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? "bg-[#030014c6]  shadow-lg w-[85%]" : "bg-[#1d1d2281]"
+      } text-white w-[90%] mx-auto rounded-full mt-4`}
+    >
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between p-3">
           <div className="flex items-center">
@@ -45,7 +47,8 @@ export default function Navbar() {
               href="#"
               className="flex text-3xl font-text font-semibold text-white"
             >
-Grew            </a>
+              Grew{" "}
+            </a>
           </div>
           <div className="hidden lg:flex items-center space-x-10 mt-2">
             <a
@@ -170,4 +173,3 @@ Grew            </a>
     </nav>
   );
 }
-
