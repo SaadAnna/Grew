@@ -6,12 +6,26 @@ import FacebookLogo from "./facebooklogo.png";
 import AirbnbLogo from "./airbnblogo.png";
 import NikeLogo from "./nikelogo.png";
 import CarrefourLogo from "./carrefourlogo.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Landingpage() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Navbar />
-      <section className="flex fle-col w-[80%] items-center justify-center text-center mt-52 mx-auto">
-        <div className="flex flex-col text-center gap-4">
+      <section
+        data-aos="fade-up"
+        data-aos-duration="900"
+        className="flex fle-col w-[80%] items-center justify-center text-center mt-52 mx-auto"
+      >
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          className="flex flex-col text-center gap-4"
+        >
           <span className="font-text text-lg font-normal text-neutral-400 ">
             Build by {""}
             <a
@@ -37,7 +51,11 @@ export default function Landingpage() {
           </a>
         </div>
       </section>
-      <div className="flex mx-auto items-center justify-center -mt-36">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="900"
+        className="flex mx-auto items-center justify-center -mt-20 lg:-mt-36"
+      >
         <img src={ImagePreview} className="lg:w-[75%] w-[95%]" />
       </div>
       <div
@@ -60,13 +78,47 @@ export default function Landingpage() {
           Youll be in good companies
         </p>
       </div>
-      <section className="flex flex-wrap mt-20 text-center items-center w-[59%] justify-center gap-5 mx-auto">
-        <img src={SamsungLogo} className="lg:w-32 h-fit box-content" />
-        <img src={CanonLogo} className="lg:w-32 h-fit box-content" />
-        <img src={CarrefourLogo} className="lg:w-32 h-fit box-content" />
-        <img src={NikeLogo} className="lg:w-32 h-fit box-content" />
-        <img src={AirbnbLogo} className="lg:w-32 h-fit box-content" />
-        <img src={FacebookLogo} className="lg:w-32 h-fit box-content" />
+      <section
+        data-aos="fade-up"
+        data-aos-duration="900"
+        className="flex flex-wrap mt-20 text-center items-center w-[59%] justify-center gap-7 mx-auto"
+      >
+        <img
+          data-aos="fade-up"
+          data-aos-duration="900"
+          src={SamsungLogo}
+          className="w-32 h-fit box-border"
+        />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="900"
+          src={CanonLogo}
+          className="w-32 h-fit box-border"
+        />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="900"
+          src={CarrefourLogo}
+          className="w-32 h-fit box-border"
+        />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="900"
+          src={NikeLogo}
+          className="w-32 h-fit box-border"
+        />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="900"
+          src={AirbnbLogo}
+          className="w-32 h-fit box-border"
+        />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="900"
+          src={FacebookLogo}
+          className="w-32 h-fit box-border"
+        />
       </section>
       <div className="flex flex-col mt-40 mx-auto justify-center">
         <h1
@@ -77,8 +129,16 @@ export default function Landingpage() {
           What can you do with Grew?
         </h1>
       </div>
-      <section className="flex flex-wrap mx-auto gap-14 mt-32 justify-center items-center">
-        <div className="flex flex-col text-start w-80 h-80 gap-2  bg-transparent">
+      <section
+        data-aos="fade-up"
+        data-aos-duration="900"
+        className="flex flex-wrap mx-auto lg:gap-14 gap-2 mt-32 justify-center items-center"
+      >
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          className="flex flex-col text-start w-80 h-80 gap-2  bg-transparent"
+        >
           <svg
             className="w-6 h-6 text-white"
             aria-hidden="true"
@@ -107,7 +167,11 @@ export default function Landingpage() {
             you save your time.{" "}
           </p>
         </div>
-        <div className="flex flex-col text-start w-80 h-80 gap-2  bg-transparent p-2">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          className="flex flex-col text-start w-80 h-80 gap-2  bg-transparent p-2"
+        >
           <svg
             className="w-6 h-6 text-white"
             aria-hidden="true"
@@ -145,7 +209,11 @@ export default function Landingpage() {
             focus on them.
           </p>
         </div>
-        <div className="flex flex-col text-start w-80 h-80 gap-2  bg-transparent p-2">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          className="flex flex-col text-start w-80 h-80 gap-2  bg-transparent p-2"
+        >
           <svg
             className="w-6 h-6 text-white"
             aria-hidden="true"
