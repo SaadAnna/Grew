@@ -110,7 +110,7 @@ export default function Navbar() {
       </div>
       <div
         className={`fixed inset-0 bg-[#1d1d22] z-50 transform ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-500 ease-in-out lg:hidden`}
       >
         <div className="flex text-start flex-col h-full">
@@ -120,7 +120,7 @@ export default function Navbar() {
             </a>
             <button
               onClick={toggleMenu}
-              className="p-2 rounded-md text-white"
+              className="p-1 rounded-md text-white"
               aria-label="Close menu"
             >
               <svg

@@ -16,6 +16,7 @@ export default function Landingpage() {
   return (
     <>
       <Navbar />
+     
       <section
         data-aos="fade-up"
         data-aos-duration="900"
@@ -105,7 +106,7 @@ export default function Landingpage() {
           data-aos="fade-up"
           data-aos-duration="900"
           src={NikeLogo}
-          className="w-32 h-fit box-border"
+          className=" box-content w-32 p-4 h-fit bg-neutral-800 rounded-xl"
         />
         <img
           data-aos="fade-up"
