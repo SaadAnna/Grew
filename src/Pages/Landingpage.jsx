@@ -1,11 +1,9 @@
 import Navbar from "./Navbar";
-import ImagePreview from "./ImagePreview.png";
-import SamsungLogo from "./samsunglogo.png";
-import CanonLogo from "./canonlogo.png";
-import FacebookLogo from "./facebooklogo.png";
-import AirbnbLogo from "./airbnblogo.png";
-import NikeLogo from "./nikelogo.png";
-import CarrefourLogo from "./carrefourlogo.png";
+import ImagePreview from "./porshe.png";
+import AmgLogo from "./AmgLogo.png";
+import AudiLogo from "./AudiLogo.png";
+import FerrariLogo from "./FerrariLogo.png";
+import PorsheLogo from "./PorsheLogo.png";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -55,14 +53,19 @@ export default function Landingpage() {
       <div
         data-aos="fade-up"
         data-aos-duration="900"
-        className="flex mx-auto items-center justify-center -mt-7 lg:-mt-36"
+        className="flex flex-col mx-auto items-center justify-center mt-28 gap-14"
       >
         <img src={ImagePreview} className="lg:w-[75%] w-[95%]" />
+        <div className="flex gap-2 items-center">
+          <div className="w-2  h-2  rounded-full cursor-pointer bg-white"></div>
+          <div className="w-2  h-2  rounded-full cursor-pointer bg-neutral-600"></div>
+          <div className="w-2  h-2  rounded-full cursor-pointer bg-neutral-600"></div>
+        </div>
       </div>
       <div
         data-aos="fade-up"
         data-aos-duration="900"
-        className="flex flex-col text-center -mt-10 gap-3"
+        className="flex flex-col text-center mt-28 gap-3"
       >
         <h1
           data-aos="fade-up"
@@ -87,48 +90,43 @@ export default function Landingpage() {
         <img
           data-aos="fade-up"
           data-aos-duration="900"
-          src={SamsungLogo}
+          src={AmgLogo}
           className="w-32 h-fit box-border"
         />
         <img
           data-aos="fade-up"
           data-aos-duration="900"
-          src={CanonLogo}
+          src={AudiLogo}
           className="w-32 h-fit box-border"
         />
         <img
           data-aos="fade-up"
           data-aos-duration="900"
-          src={CarrefourLogo}
+          src={PorsheLogo}
           className="w-32 h-fit box-border"
         />
         <img
           data-aos="fade-up"
           data-aos-duration="900"
-          src={NikeLogo}
-          className="w-32 h-fit box-border"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-duration="900"
-          src={AirbnbLogo}
-          className="w-32 h-fit box-border"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-duration="900"
-          src={FacebookLogo}
+          src={FerrariLogo}
           className="w-32 h-fit box-border"
         />
       </section>
-      <div className="flex flex-col mt-40 mx-auto justify-center">
+      <div className="flex flex-col mt-40 mx-auto justify-center gap-3">
         <h1
           data-aos="fade-up"
           data-aos-duration="900"
           className="font-text font-semibold text-3xl text-white "
         >
-          What can you do with Grew?
+          Our best seller
         </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="900"
+          className="font-text font-normal text-lg md:text-xl  text-neutral-400"
+        >
+          Find out about the best-selling cars in Grew
+        </p>
       </div>
       <section
         data-aos="fade-up"
