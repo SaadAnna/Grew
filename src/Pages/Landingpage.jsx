@@ -14,9 +14,9 @@ export default function Landingpage() {
     AOS.init();
   }, []);
   return (
-    <>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Navbar />
-     
+
       <section
         data-aos="fade-up"
         data-aos-duration="900"
@@ -55,7 +55,7 @@ export default function Landingpage() {
       <div
         data-aos="fade-up"
         data-aos-duration="900"
-        className="flex mx-auto items-center justify-center -mt-20 lg:-mt-36"
+        className="flex mx-auto items-center justify-center -mt-7 lg:-mt-36"
       >
         <img src={ImagePreview} className="lg:w-[75%] w-[95%]" />
       </div>
@@ -106,7 +106,7 @@ export default function Landingpage() {
           data-aos="fade-up"
           data-aos-duration="900"
           src={NikeLogo}
-          className=" box-content w-32 p-4 h-fit bg-neutral-800 rounded-xl"
+          className="w-32 h-fit box-border"
         />
         <img
           data-aos="fade-up"
@@ -133,7 +133,7 @@ export default function Landingpage() {
       <section
         data-aos="fade-up"
         data-aos-duration="900"
-        className="flex flex-wrap mx-auto lg:gap-14 gap-2 mt-32 justify-center items-center"
+        className="flex flex-wrap mx-auto lg:gap-14 mt-32 justify-center items-center"
       >
         <div
           data-aos="fade-up"
@@ -250,6 +250,6 @@ export default function Landingpage() {
           </p>
         </div>
       </section>
-    </>
+    </div>
   );
 }
