@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import ImagePreview from "./porshe.png";
+import SilderImageSection from "./SliderImageSection"
 import AmgLogo from "./AmgLogo.png";
 import AudiLogo from "./AudiLogo.png";
 import FerrariLogo from "./FerrariLogo.png";
@@ -14,7 +14,6 @@ export default function Landingpage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Navbar />
-
       <section
         data-aos="fade-up"
         data-aos-duration="900"
@@ -50,18 +49,7 @@ export default function Landingpage() {
           </a>
         </div>
       </section>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="900"
-        className="flex flex-col mx-auto items-center justify-center mt-28 gap-14"
-      >
-        <img src={ImagePreview} className="lg:w-[75%] w-[95%]" />
-        <div className="flex gap-2 items-center">
-          <div className="w-2  h-2  rounded-full cursor-pointer bg-white"></div>
-          <div className="w-2  h-2  rounded-full cursor-pointer bg-neutral-600"></div>
-          <div className="w-2  h-2  rounded-full cursor-pointer bg-neutral-600"></div>
-        </div>
-      </div>
+      <SilderImageSection />
       <div
         data-aos="fade-up"
         data-aos-duration="900"
@@ -125,7 +113,7 @@ export default function Landingpage() {
           data-aos-duration="900"
           className="font-text font-normal text-lg md:text-xl  text-neutral-400"
         >
-          Find out about the best-selling cars in Grew
+Find out about the best-selling cars in Grew
         </p>
       </div>
       <section
