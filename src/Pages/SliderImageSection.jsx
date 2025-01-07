@@ -1,12 +1,12 @@
 'use client'
 import { useState, useEffect, } from 'react'
-import ImagePreview from "./porshe.png";
-import AmgLogo from "./AmgLogo.png";
-import AudiLogo from "./AudiLogo.png";
+import PorsheImage from "./porshe.png";
+import PorsheImageTwo from "./PorsheTwo.png";
+import PorsheImageThree from "./PorsheThree.png";
 const images = [
-  ImagePreview,
-  AudiLogo,
-  AmgLogo
+  PorsheImage,
+  PorsheImageTwo,
+  PorsheImageThree,
 ]
 export default function ImageSlider() {
     const [currentIndex, setCurrentIndex] = useState(0)

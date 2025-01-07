@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import SilderImageSection from "./SliderImageSection"
+import SilderImageSection from "./SliderImageSection";
 import AmgLogo from "./AmgLogo.png";
 import AudiLogo from "./AudiLogo.png";
 import FerrariLogo from "./FerrariLogo.png";
@@ -35,11 +35,11 @@ export default function Landingpage() {
           </span>
 
           <h1 className="font-text text-white font-semibold lg:text-7xl text-5xl">
-            Increase your daily productivity with Grew.
+            Choose, design and buy the car of your dreams{" "}
           </h1>
           <p className="font-text text-neutral-400 font-normal text-lg">
-            With Grew you can organize your day and increase its <br />{" "}
-            productivity in effective and real ways.
+            With Grew, buy the car of your dreams
+            <br /> from anywhere in the world
           </p>
           <a
             href="#"
@@ -113,7 +113,7 @@ export default function Landingpage() {
           data-aos-duration="900"
           className="font-text font-normal text-lg md:text-xl  text-neutral-400"
         >
-Find out about the best-selling cars in Grew
+          Find out about the best-selling cars in Grew
         </p>
       </div>
       <section
