@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import SilderImageSection from "./SliderImageSection";
+import BestSeller from "./BestSeller";
 import AmgLogo from "./AmgLogo.png";
 import AudiLogo from "./AudiLogo.png";
 import FerrariLogo from "./FerrariLogo.png";
@@ -236,6 +237,7 @@ export default function Landingpage() {
           </p>
         </div>
       </section>
+      <BestSeller />
     </div>
   );
 }
