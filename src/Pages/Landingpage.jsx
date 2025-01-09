@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import SilderImageSection from "./SliderImageSection";
 import BestSeller from "./BestSeller";
+import WhyUsSection from "./WhyUsSection";
 import AmgLogo from "./AmgLogo.png";
 import AudiLogo from "./AudiLogo.png";
 import FerrariLogo from "./FerrariLogo.png";
@@ -101,24 +102,9 @@ export default function Landingpage() {
           className="w-32 h-fit box-border"
         />
       </section>
-      <div className="flex flex-col mt-52 mx-auto justify-center gap-3">
-        <h1
-          data-aos="fade-up"
-          data-aos-duration="900"
-          className="font-text font-semibold text-3xl text-white "
-        >
-          Our best seller
-        </h1>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="900"
-          className="font-text font-normal text-lg md:text-xl  text-neutral-400"
-        >
-          Find out about the best-selling cars in Grew
-        </p>
-      </div>
 
       <BestSeller />
+      <WhyUsSection />
     </div>
   );
 }

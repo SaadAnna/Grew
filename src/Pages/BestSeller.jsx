@@ -32,11 +32,27 @@ export default function SimpleBestSellerSection() {
 
   return (
     <div className="p-4">
-      <div className="flex flex-wrap justify-center items-center gap-4 mt-32">
+      <div className="flex flex-col mt-52 mx-auto justify-center gap-3">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="900"
+          className="font-text font-semibold text-3xl text-white "
+        >
+          Our best seller
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="900"
+          className="font-text font-normal text-lg md:text-xl  text-neutral-400"
+        >
+          Find out about the best-selling cars in Grew
+        </p>
+      </div>
+      <div className="flex flex-wrap justify-center items-center gap-10 mt-32">
         {cars.map((car) => (
           <div
             key={car.id}
-            className="relative cursor-pointer w-[300px] h-[400px] bg-[#1d1d224f] backdrop-blur-md shadow-lg rounded-xl p-4"
+            className="relative cursor-pointer w-[300px] h-[400px] bg-[#1d1d2281] backdrop-blur-sm rounded-xl p-4"
             onMouseEnter={() => setHoveredId(car.id)}
             onMouseLeave={() => setHoveredId(null)}
           >
