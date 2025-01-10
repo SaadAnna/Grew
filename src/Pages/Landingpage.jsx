@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import SilderImageSection from "./SliderImageSection";
 import BestSeller from "./BestSeller";
 import WhyUsSection from "./WhyUsSection";
+import UserReviews from "./UserReviews";
 import AmgLogo from "./AmgLogo.png";
 import AudiLogo from "./AudiLogo.png";
 import FerrariLogo from "./FerrariLogo.png";
@@ -105,6 +106,7 @@ export default function Landingpage() {
 
       <BestSeller />
       <WhyUsSection />
+      <UserReviews />
     </div>
   );
 }

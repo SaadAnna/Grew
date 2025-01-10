@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function WhyUsSection() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  //simple data for the section
   const Details = [
     {
       id: 1,
@@ -94,7 +101,11 @@ export default function WhyUsSection() {
       <section className="flex flex-wrap mt-32 items-center gap-10">
         {Details.map((Detail) => (
           <div key={Detail.id} className="mx-auto">
-            <div className="flex flex-col text-start items-start cursor-pointer gap-3 w-80 h-80 p-4 rounded-lg ease-linear bg-[#1d1d2281] backdrop-blur-sm duration-100 hover:bg-[#1d1d2281] hover:backdrop-blur-md">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="900"
+              className="flex flex-col text-start items-start cursor-pointer gap-3 w-80 h-80 p-4 rounded-lg ease-linear bg-[#1d1d2281] backdrop-blur-sm duration-100 hover:bg-[#1d1d2281] hover:backdrop-blur-md"
+            >
               <span className="">{Detail.Icon}</span>
               <h3 className="font-text text-white font-semibold text-2xl">
                 {Detail.Title}

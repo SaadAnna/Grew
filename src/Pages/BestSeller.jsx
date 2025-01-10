@@ -2,6 +2,9 @@ import { useState } from "react";
 import PorsheImage from "./PorsheImage.png";
 import MercdesImage from "./MercedesImage.png";
 import FerrariImage from "./FerrariImage.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const cars = [
   {
     id: 1,
@@ -28,6 +31,9 @@ const cars = [
 ];
 
 export default function SimpleBestSellerSection() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
@@ -52,6 +58,8 @@ export default function SimpleBestSellerSection() {
         {cars.map((car) => (
           <div
             key={car.id}
+            data-aos="fade-up"
+            data-aos-duration="900"
             className="relative cursor-pointer w-[300px] h-[400px] bg-[#1d1d2281] backdrop-blur-sm rounded-xl p-4"
             onMouseEnter={() => setHoveredId(car.id)}
             onMouseLeave={() => setHoveredId(null)}
