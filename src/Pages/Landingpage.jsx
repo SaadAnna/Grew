@@ -3,6 +3,7 @@ import SilderImageSection from "./SliderImageSection";
 import BestSeller from "./BestSeller";
 import WhyUsSection from "./WhyUsSection";
 import UserReviews from "./UserReviews";
+import Footer from "./Footer";
 import AmgLogo from "./AmgLogo.png";
 import AudiLogo from "./AudiLogo.png";
 import FerrariLogo from "./FerrariLogo.png";
@@ -20,7 +21,7 @@ export default function Landingpage() {
       <section
         data-aos="fade-up"
         data-aos-duration="900"
-        className="flex fle-col w-[80%] items-center justify-center text-center mt-52 mx-auto"
+        className="flex fle-col lg:w-[95%] w-[99%] items-center justify-center text-center mt-52 mx-auto"
       >
         <div
           data-aos="fade-up"
@@ -107,6 +108,7 @@ export default function Landingpage() {
       <BestSeller />
       <WhyUsSection />
       <UserReviews />
+      <Footer />
     </div>
   );
 }

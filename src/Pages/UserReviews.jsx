@@ -56,7 +56,7 @@ const UserReviews = () => {
     return () => clearInterval(timer);
   }, []);
   return (
-    <div className="w-full max-w-7xl mt-52 mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-52">
       <div className="flex flex-col  mx-auto justify-center gap-3">
         <h1
           data-aos="fade-up"
@@ -83,7 +83,7 @@ const UserReviews = () => {
               <div
                 data-aos="fade-up"
                 data-aos-duration="900"
-                className="bg-[#1d1d2281] gap-2 h-fit duration-100 ease-linear  cursor-pointer backdrop-blur-sm flex flex-col text-center items-center rounded-lg p-5 hover:backdrop-blur-md "
+                className="bg-[#1d1d2281] gap-2 w-full h-fit duration-100 ease-linear  cursor-pointer backdrop-blur-sm flex flex-col text-center items-center rounded-lg p-5 hover:backdrop-blur-md "
               >
                 <img className="w-12 h-12 rounded-full" src={review.Image} />
                 <div>

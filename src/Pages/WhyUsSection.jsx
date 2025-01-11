@@ -81,7 +81,7 @@ export default function WhyUsSection() {
     },
   ];
   return (
-    <>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col mt-52 mx-auto justify-center gap-3">
         <h1
           data-aos="fade-up"
@@ -98,13 +98,13 @@ export default function WhyUsSection() {
           Your Trusted Partner for Finding the Perfect Car.{" "}
         </p>
       </div>
-      <section className="flex flex-wrap mt-32 items-center gap-10">
+      <section className="flex flex-wrap m-auto mt-32 items-center gap-10">
         {Details.map((Detail) => (
           <div key={Detail.id} className="mx-auto">
             <div
               data-aos="fade-up"
               data-aos-duration="900"
-              className="flex flex-col text-start items-start cursor-pointer gap-3 w-80 h-80 p-4 rounded-lg ease-linear bg-[#1d1d2281] backdrop-blur-sm duration-100 hover:bg-[#1d1d2281] hover:backdrop-blur-md"
+              className="flex flex-col text-start items-start cursor-pointer gap-3 w-72 h-72 m-auto p-4 rounded-lg ease-linear bg-[#1d1d2281] backdrop-blur-sm duration-100 hover:bg-[#1d1d2281] hover:backdrop-blur-md"
             >
               <span className="">{Detail.Icon}</span>
               <h3 className="font-text text-white font-semibold text-2xl">
@@ -117,6 +117,6 @@ export default function WhyUsSection() {
           </div>
         ))}
       </section>
-    </>
+    </div>
   );
 }
