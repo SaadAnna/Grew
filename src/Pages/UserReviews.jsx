@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { useState, useEffect } from "react";
@@ -63,14 +64,14 @@ const UserReviews = () => {
           data-aos-duration="900"
           className="font-text font-semibold text-3xl text-white "
         >
-          Why Choose Us?{" "}
+          What do customers say about Grew?          {" "}
         </h1>
         <p
           data-aos="fade-up"
           data-aos-duration="900"
           className="font-text font-normal text-lg md:text-xl  text-neutral-400"
         >
-          Your Trusted Partner for Finding the Perfect Car.{" "}
+          Make your trust in us more by watching our customers' opinions{" "}
         </p>
       </div>
       <div className="relative overflow-hidden mt-20">
@@ -79,11 +80,11 @@ const UserReviews = () => {
           style={{ transform: `translateX(-${currentReview * 100}%)` }}
         >
           {reviews.map((review) => (
-            <div key={review.id} className="w-full flex-shrink-0 px-4">
+            <div key={review.id} className="w-[100%] flex-shrink-0">
               <div
                 data-aos="fade-up"
                 data-aos-duration="900"
-                className="bg-[#1d1d2281] gap-2 w-full h-fit duration-100 ease-linear  cursor-pointer backdrop-blur-sm flex flex-col text-center items-center rounded-lg p-5 hover:backdrop-blur-md "
+                className="bg-[#1d1d2281] gap-2 w-[100%]  h-fit duration-100 ease-linear  cursor-pointer backdrop-blur-sm flex flex-col text-center items-center rounded-lg p-5 hover:backdrop-blur-md "
               >
                 <img className="w-12 h-12 rounded-full" src={review.Image} />
                 <div>
@@ -104,7 +105,7 @@ const UserReviews = () => {
         </div>
         <button
           onClick={prevReview}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 ml-2"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2"
           aria-label="Previous review"
         >
           <svg
@@ -124,7 +125,7 @@ const UserReviews = () => {
         </button>
         <button
           onClick={nextReview}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-55 hover:bg-opacity-75 rounded-full p-2 mr-2"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-55 hover:bg-opacity-75 rounded-full p-2 "
           aria-label="Next review"
         >
           <svg

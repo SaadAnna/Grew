@@ -15,13 +15,13 @@ export default function ImageSlider() {
   }, []);
 
   return (
-    <div className="relative mt-2 w-full max-w-7xl h-[500px] overflow-hidden flex items-center justify-center">
+    <div className="relative mt-1 max-w-7xl h-[500px] overflow-hidden flex items-center justify-center">
       {images.map((src, index) => (
         <img
           key={src}
           src={src}
           alt={`Slide ${index + 1}`}
-          className={`absolute  lg:w-[97%] w-full object-fill transition-opacity duration-1000 ease-in-out ${
+          className={`absolute  w-full object-fill transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
         />

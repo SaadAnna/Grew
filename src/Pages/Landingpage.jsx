@@ -21,7 +21,7 @@ export default function Landingpage() {
       <section
         data-aos="fade-up"
         data-aos-duration="900"
-        className="flex fle-col lg:w-[95%] w-[99%] items-center justify-center text-center mt-52 mx-auto"
+        className="flex fle-col  w-full items-center justify-center text-center mt-52 mx-auto"
       >
         <div
           data-aos="fade-up"

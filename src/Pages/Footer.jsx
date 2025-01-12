@@ -48,13 +48,13 @@ export default function Footer() {
   }, []);
   return (
     <div className=" max-w-7xl mx-auto mt-52 px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-wrap items-center text-center gap-4 lg:gap-40">
+      <div className="flex flex-col mt-56 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:flex md:flex-row  md:justify-between md:items-center md:text-center lg:mt-72">
         {FooterDetails.map((footer) => (
           <div
             key={footer.id}
             data-aos="fade-up"
             data-aos-duration="900"
-            className="flex flex-col p-4 gap-2 items-start text-start w-fit h-80"
+            className="flex flex-col p-4 gap-2 text-start w-fit h-80"
           >
             <h1 className="font-text text-2xl text-white font-semibold">
               {footer.title}

@@ -81,7 +81,7 @@ export default function WhyUsSection() {
     },
   ];
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto m-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col mt-52 mx-auto justify-center gap-3">
         <h1
           data-aos="fade-up"
@@ -98,7 +98,7 @@ export default function WhyUsSection() {
           Your Trusted Partner for Finding the Perfect Car.{" "}
         </p>
       </div>
-      <section className="flex flex-wrap m-auto mt-32 items-center gap-10">
+      <section className="flex flex-wrap mt-32 items-center gap-10">
         {Details.map((Detail) => (
           <div key={Detail.id} className="mx-auto">
             <div
