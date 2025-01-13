@@ -98,7 +98,7 @@ export default function WhyUsSection() {
           Your Trusted Partner for Finding the Perfect Car.{" "}
         </p>
       </div>
-      <section className="flex flex-wrap mt-32 items-center gap-10">
+      <section className="w-full flex flex-wrap mt-32 items-center gap-10">
         {Details.map((Detail) => (
           <div key={Detail.id} className="mx-auto">
             <div

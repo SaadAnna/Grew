@@ -48,7 +48,7 @@ export default function Footer() {
   }, []);
   return (
     <div className=" max-w-7xl mx-auto mt-52 px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col mt-56 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:flex md:flex-row  md:justify-between md:items-center md:text-center lg:mt-72">
+      <div className="flex flex-col mt-56 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:flex md:flex-row  md:justify-between md:items-center md:text-center lg:mt-52">
         {FooterDetails.map((footer) => (
           <div
             key={footer.id}
